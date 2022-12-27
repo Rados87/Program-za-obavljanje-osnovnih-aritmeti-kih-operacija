@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Program za obavljanje osnovnih aritmetičkih operacija</title>
+</head>
+
+<body>
+    <script>
+
+    ///////////////////////////////////////////////////////
+    ////////////////////METOD 1////////////////////////////
+    ///////////////////////////////////////////////////////
+    /////POZIVANJE FUNKCIJE I UPOTREBA IF ELSE NAREDBI/////
+    ///////////////////////////////////////////////////////
+    /*
+    function sabiranje (a, b) {
+        return parseInt(a) + parseInt(b);
+    }
+
+    function oduzimanje (a, b) {
+        return a - b;
+    }
+
+    function mnozenje (a, b) {
+        return a * b;
+    }
+
+    function deljenje (a, b) {
+        return a / b;
+    }
+
+
+    let valueA =  prompt("Unesite vrednost A: ");
+    let operation = prompt ("Unesite operaciju: ");
+    let valueB = prompt("Unesite vrednotst B: ");
+
+    let result;
+
+    if (operation=="+"){
+        result = sabiranje(valueA,valueB);
+        document.write("Rezultat sabiranja je: " + result);
+    } else if ( operation == "-") {
+        result = oduzimanje(valueA,valueB);
+        document.write("Rezultat oduzimanja je: " + result);
+    } else if ( operation == "*") {
+        result = mnozenje(valueA,valueB);
+        document.write("Rezultat mnozenja je: " + result);
+    } else if ( operation == "/") {
+        result = deljenje(valueA,valueB);
+        document.write("Rezultat deljenja je: " + result);
+    } else {
+        document.write ("Unos podataka nije tacan!");
+    }*/
+
+    ///////////////////////////////////////////////////
+    //////////////METOD 2//////////////////////////////
+    ///////////////////////////////////////////////////
+    /////UPOTREBA SWITCH NAREDBE //////////////////////
+    ///////////////////////////////////////////////////
+
+    let valueA =  prompt("Unesite vrednost A: ");
+    let operation = prompt ("Unesite operaciju: ");
+    let valueB = prompt("Unesite vrednotst B: ");
+
+
+    let result;
+    switch (operation) {
+        case "+":
+        result = parseInt(valueA) + parseInt(valueB);
+        document.write("Rezultat sabiranja je: " + result);
+        break;
+        case "-":
+        result = valueA - valueB;
+        document.write("Rezultat oduzimanja je: " + result);
+        break;
+        case "*":
+        result = valueA * valueB;
+        document.write("Rezultat mnozenja je: " + result);
+        break;
+        case "/":
+        result = valueA / valueB;
+        document.write("Rezultat deljenja je: " + result);
+        break;
+        default:
+        document.write ("Unos podataka nije tacan!");
+        break;
+    }
+
+    </script>
+</body>
+
+</html>
